@@ -1,4 +1,4 @@
-Vue 3 CRUD app with Reactivity API
+# vue3-crud-app-with-reactivity-api
 
 ## Project setup
 ```
