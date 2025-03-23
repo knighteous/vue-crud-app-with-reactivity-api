@@ -25,7 +25,7 @@ onMounted(() => {
 //         const {data} = await axios.get('http://localhost:3000/employees')
 //         employees.value = data
 //     } catch (error) {
-//         console.table([error?.response?.data])
+//         console.table([error])
 //     }
 // }
 
@@ -49,7 +49,7 @@ const onAdd = async () => {
     //     onCloseModal()
     //     onLoad()
     // } catch (error) {
-    //     console.error([error?.response?.data])
+    //     console.table([error])
     // }
 
     store.methods.onAdd(empObj)
@@ -78,7 +78,7 @@ const onUpdate = async () => {
     //     onCloseModal()
     //     onLoad()
     // } catch (error) {
-    //    console.error([error?.response?.data]) 
+    //    console.table([error])
     // }
 
     store.methods.onUpdate(empObj, empid.value)
@@ -96,7 +96,7 @@ const onDelete = async (empid) => {
     //     onResetForm()
     //     onLoad()
     // } catch (error) {
-    //     console.error([error?.response?.data])
+    //     console.table([error])
     // }
 
     store.methods.onDelete(empid)
