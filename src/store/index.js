@@ -24,7 +24,7 @@ const methods = {
             const {data} = await axios.post('http://localhost:3000/employees', empObj)
             methods.onAddSuccess(data)
         } catch (error) {
-            console.error([error])
+            console.table([error])
         }
     },
     onAddSuccess: (employeeNew) => {
@@ -36,7 +36,7 @@ const methods = {
             const {data} = await axios.put(`http://localhost:3000/employees/${empid}`, empObj)
             methods.onUpdateSuccess(data)
         } catch (error) {
-           console.error([error]) 
+           console.table([error]) 
         }
     },
     onUpdateSuccess: (employeeEdit) => {
@@ -48,7 +48,7 @@ const methods = {
             const {data} = await axios.delete(`http://localhost:3000/employees/${empid}`)
             methods.onDeleteSuccess(data)
         } catch (error) {
-            console.error([error])
+            console.table([error])
         }
     },
     onDeleteSuccess: (employee) => {
